@@ -8,15 +8,17 @@
   </head>
   
   <body>
-      <div class="center">
-        <h2 class="center logo">Sign Up for Boblox</h2>
-        <br>
-        <label>Email</label><br><input id="email" type="email" placeholder="(Not needed)" maxlength="45">
-        <br><br><label>Username</label><br><input id="username" type="text" placeholder="Don't put your real name." maxlength="35" minlength="3">
-        <br><br><label>Password</label><br><input id="password" type="password" placeholder="Must be 16 characters." maxlength="100000" minlength="16">
-        <br><br><input id="username" type="checkbox" ><label> I agree to the Privacy Policy and Terms and Conditions and that I have thoroughly read through it.</label>
-        <br><br><button type="button" class="btn btn-success">Create an account</button>
-        <br><br><a href="signin">Already got an account?</a>
-        </div>
+     <div class="center">
+        <form method="post" action="https://clickendpoint.co.uk/create.php">
+            <h2 class="center logo">Sign Up for Boblox</h2>
+            <br>
+            <label>Email</label><br><input id="email" type="email" name="email" placeholder="(Not needed)" maxlength="45">
+            <br><br><label>Username</label><br><input id="username" type="text" name="username" placeholder="Don't put your real name." maxlength="35" minlength="3">
+            <br><br><label>Password</label><br><input id="password" type="password" name="password"placeholder="Must be 16 characters." maxlength="100000" minlength="16">
+            <br><br><input id="chek" type="checkbox"><label> I agree to the Privacy Policy and Terms and Conditions and that I have thoroughly read through it.</label>
+            <br><br><button type="submit" class="btn btn-success">Create an account</button>
+            <br><br><a href="signin">Already got an account?</a>
+        </form>
+     </div>
   </body>
 </html>
