@@ -61,7 +61,11 @@
       
       <h3 style="color: red;">Dangerous Options</h3>
       <p style="color: red;">Changing any of these account settings could most likely break your account.</p>
-      <a href="https://clickendpoint.co.uk/delete-account"><button class="btn btn-danger">Delete Account</button></a>
+      <form method="post" action="https://clickendpoint.co.uk/delete-account">
+        <input name="password" placeholder="Enter password to continue deletion."/>
+        <button type="submit" class="btn btn-danger">Delete Account</button>
+        <strong>This will delete your games, Bobux and everything else on your account.</strong>
+      </form> 
     </div>
   </body>
 </html>
