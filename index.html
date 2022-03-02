@@ -46,7 +46,7 @@
         xhr.send();
          
         var xhr2 = new XMLHttpRequest();
-        xhr2.open('GET', 'https://clickendpoint.co.uk/api/getusername.php', true);
+        xhr2.open('GET', 'https://clickendpoint.co.uk/api/logincheck.php', true);
 
         xhr2.onload = function () {
          if (xhr2.responseText == "login") {
