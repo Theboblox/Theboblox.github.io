@@ -35,6 +35,31 @@
        <ul class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             User
+       <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://clickendpoint.co.uk/api/getusername.php', true);
+
+        xhr.onload = function () {
+         document.getElementById('navbarDropdown').innerText = xhr.responseText;
+        };
+
+        xhr.send();
+         
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', 'https://clickendpoint.co.uk/api/getusername.php', true);
+
+        xhr2.onload = function () {
+         if (xhr2.responseText == "login") {
+           console.log(xhr2.responseText);
+         } else {
+           console.log(xhr2.responseText); 
+           alert('Please login as most features do not work.')
+         };
+        };
+
+        xhr2.send();
+         
+      </script>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Account Settings</a></li>
